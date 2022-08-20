@@ -1,13 +1,11 @@
-package com.AmazonAddToCart;
+package com.amazon.addToCart;
 
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
-import org.openqa.selenium.support.ui.Select;
 
-public class Browserlunch extends TestClass {
-
+public class AllMethodes {
 	Actions ac;
 
 	public void login(WebElement element) {
@@ -28,7 +26,7 @@ public class Browserlunch extends TestClass {
 	}
 
 	public void allmobile(WebElement element, WebDriver driver) {
-	
+
 		ac = new Actions(driver);
 		ac.moveToElement(element).click().build().perform();
 	}
@@ -63,8 +61,7 @@ public class Browserlunch extends TestClass {
 	}
 
 	public void deletebtn(WebElement element) {
-		Select s = new Select(element);
-		s.selectByValue("0");
+	element.click();
 
 	}
 
